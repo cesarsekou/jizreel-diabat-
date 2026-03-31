@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jizreel Diabaté — Artiste peintre chrétien. Découvrez et commandez ses œuvres en formats A5, A4, A3.">
+  <title>Jizreel Diabaté — Artiste Peintre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ===== PROMO BANNER ===== -->
+  <div class="promo-banner" id="promoBanner">
+    <div class="promo-banner-inner">
+      <span class="promo-badge">✦ Offre exclusive</span>
+      <p class="promo-text">Le Projet Bible en Image — Commandez vos œuvres en petits formats A5, A4, A3 à prix réduits !</p>
+      <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" class="promo-cta" style="text-decoration:none">Commander →</a>
+    </div>
+    <button class="promo-close" id="promoBannerClose" aria-label="Fermer">✕</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">JD</div>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link">Accueil</a>
+      <a href="#gallery" class="nav-link">Œuvres</a>
+      <a href="#boutique" class="nav-link nav-link--highlight">Boutique</a>
+      <a href="#about" class="nav-link">À propos</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="nav-theme-btn" id="themeToggle" aria-label="Basculer le thème">🌙</button>
+    </div>
+    <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" class="nav-order-btn" style="text-decoration:none">Commander</a>
+  </nav>
+
+  <!-- Hero Section — Scattered Gallery -->
+  <section class="hero" id="hero">
+    <div class="hero-center">
+      <p class="hero-tagline">artiste peintre</p>
+      <h1 class="hero-title">Jizreel<br><em>Diabaté</em></h1>
+      <p class="hero-sub">Voyage dans l'Âme</p>
+      <div class="hero-actions">
+        <a href="#gallery" class="hero-cta">Explorer les œuvres</a>
+        <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" class="hero-cta hero-cta--outline" style="text-decoration:none; display:inline-flex; align-items:center;">Commander une œuvre</a>
+      </div>
+    </div>
+
+    <!-- Floating images around the title -->
+    <div class="floating-images" id="floatingImages">
+      <div class="float-img float-img--sm" data-x="6" data-y="5" data-rot="-8" data-radius="28%">
+        <img src="628375120_3306988932789078_4526678782831250961_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--md" data-x="28" data-y="3" data-rot="5" data-radius="20px">
+        <img src="629806980_3306989066122398_1611412790309748051_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--lg" data-x="72" data-y="8" data-rot="3" data-radius="18px">
+        <img src="631416187_3306988752789096_2612156850630083529_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--md" data-x="85" data-y="32" data-rot="-5" data-radius="50%">
+        <img src="632554554_3306988449455793_5836480398357894187_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--lg" data-x="2" data-y="35" data-rot="6" data-radius="24px">
+        <img src="632696973_3310263705794934_2787686598036332835_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--sm" data-x="88" data-y="60" data-rot="-10" data-radius="16px">
+        <img src="632943091_3306989769455661_7728818891146812539_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--md" data-x="12" data-y="68" data-rot="4" data-radius="22px">
+        <img src="633800666_3311901232297848_4913680815632571010_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--sm" data-x="48" data-y="75" data-rot="-7" data-radius="50%">
+        <img src="634266605_3312606258894012_5000595943645912143_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--md" data-x="72" data-y="72" data-rot="9" data-radius="20px">
+        <img src="636547802_3317741428380495_6876618603753698530_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--sm" data-x="60" data-y="18" data-rot="-4" data-radius="12px">
+        <img src="637175827_3314345985386706_8611780672414893757_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+      <div class="float-img float-img--sm" data-x="38" data-y="82" data-rot="12" data-radius="50%">
+        <img src="637291450_3318013495019955_3319981768393814718_n.jpg" alt="Œuvre de Jizreel Diabaté">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BIBLE EN IMAGE — Projet Section ===== -->
+  <section class="projet-section" id="projet">
+    <div class="projet-inner">
+      <div class="projet-text">
+        <span class="section-label">Projet exclusif</span>
+        <h2 class="projet-title">Bible en <em>Image</em></h2>
+        <div class="projet-quote">
+          <p>« De nombreuses personnes m'ont demandé : <em>Jizréel, comment faire pour avoir tes œuvres chez moi ?</em> »</p>
+        </div>
+        <p class="projet-body">
+          Aujourd'hui, j'ai eu à cœur de vous faire une offre exclusive : vous permettre de vous procurer
+          mes œuvres en petits formats — <strong>A5, A4 et A3</strong> — à des prix très réduits.
+        </p>
+        <p class="projet-body">
+          C'est enfin l'occasion tant attendue. Saisissez-la dès maintenant !
+        </p>
+        <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" rel="noopener" class="projet-btn">
+          <span>Commander maintenant</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="projet-images">
+        <div class="projet-img-stack">
+          <div class="projet-img projet-img--back">
+            <img src="653706283_3347960708691900_7012913551639943438_n.jpg" alt="Bible en Image">
+          </div>
+          <div class="projet-img projet-img--front">
+            <img src="651283826_3340920492729255_3168433292775145844_n.jpg" alt="Bible en Image">
+          </div>
+          <div class="projet-img-badge">Offre exclusive</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <span class="section-label">Collection</span>
+      <h2 class="section-title">Les Œuvres</h2>
+    </div>
+    <div class="gallery-marquee-container">
+      <div class="gallery-marquee" id="galleryMarquee">
+        <!-- JS inserts items here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOUTIQUE Section ===== -->
+  <section class="boutique-section" id="boutique">
+    <div class="boutique-inner">
+      <div class="section-header">
+        <span class="section-label">Boutique</span>
+        <h2 class="section-title">Vos œuvres,<br>chez <em>vous</em></h2>
+        <p class="boutique-sub">Reproductions d'art imprimées avec soin, disponibles en trois formats pour s'adapter à tous les espaces.</p>
+      </div>
+
+      <div class="format-cards">
+
+        <!-- A5 -->
+        <div class="format-card" id="formatA5">
+          <div class="format-card-header">
+            <div class="format-visual format-visual--a5">
+              <div class="format-frame">
+                <img src="648797088_3334669386687699_3255939220999393911_n.jpg" alt="Format A5">
+              </div>
+            </div>
+            <span class="format-tag">Le plus accessible</span>
+          </div>
+          <div class="format-card-body">
+            <h3 class="format-name">Format A5</h3>
+            <p class="format-dims">14,8 × 21 cm</p>
+            <p class="format-desc">Idéal pour votre bureau, votre table de chevet ou offrir en cadeau. Léger, élégant, intime.</p>
+            <ul class="format-perks">
+              <li>✦ Impression haute qualité</li>
+              <li>✦ Papier mat premium</li>
+              <li>✦ Livraison soignée</li>
+            </ul>
+            <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" rel="noopener" class="format-btn">Commander en A5</a>
+          </div>
+        </div>
+
+        <!-- A4 -->
+        <div class="format-card format-card--featured" id="formatA4">
+          <div class="format-card-featured-badge">⭐ Le plus populaire</div>
+          <div class="format-card-header">
+            <div class="format-visual format-visual--a4">
+              <div class="format-frame">
+                <img src="650033617_3337359556418682_2542248172031033191_n.jpg" alt="Format A4">
+              </div>
+            </div>
+          </div>
+          <div class="format-card-body">
+            <h3 class="format-name">Format A4</h3>
+            <p class="format-dims">21 × 29,7 cm</p>
+            <p class="format-desc">Le format parfait pour décorer un salon, un bureau ou une chambre. Un équilibre idéal entre présence et discrétion.</p>
+            <ul class="format-perks">
+              <li>✦ Impression haute qualité</li>
+              <li>✦ Papier mat premium</li>
+              <li>✦ Livraison soignée</li>
+            </ul>
+            <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" rel="noopener" class="format-btn format-btn--featured">Commander en A4</a>
+          </div>
+        </div>
+
+        <!-- A3 -->
+        <div class="format-card" id="formatA3">
+          <div class="format-card-header">
+            <div class="format-visual format-visual--a3">
+              <div class="format-frame">
+                <img src="656312169_3347960775358560_2735242576335602894_n.jpg" alt="Format A3">
+              </div>
+            </div>
+            <span class="format-tag">Grand impact</span>
+          </div>
+          <div class="format-card-body">
+            <h3 class="format-name">Format A3</h3>
+            <p class="format-dims">29,7 × 42 cm</p>
+            <p class="format-desc">Pour ceux qui veulent que l'œuvre s'impose dans l'espace. Idéal pour les grandes pièces, bureaux professionnels.</p>
+            <ul class="format-perks">
+              <li>✦ Impression haute qualité</li>
+              <li>✦ Papier mat premium</li>
+              <li>✦ Livraison soignée</li>
+            </ul>
+            <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" rel="noopener" class="format-btn">Commander en A3</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Reassurance strip -->
+      <div class="boutique-reassurance">
+        <div class="reassurance-item">
+          <span class="reassurance-icon">🎨</span>
+          <span>Œuvres originales de Jizreel Diabaté</span>
+        </div>
+        <div class="reassurance-item">
+          <span class="reassurance-icon">📦</span>
+          <span>Livraison dans toute la Côte d'Ivoire et à l'international</span>
+        </div>
+        <div class="reassurance-item">
+          <span class="reassurance-icon">💌</span>
+          <span>Commande simple via formulaire Google</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <span class="section-label">L'artiste</span>
+        <h2 class="about-title">Un pinceau guidé<br>par la <em>foi</em></h2>
+        <p class="about-body">
+          Surnommé <strong>« Le Peintre de la Lumière »</strong>, Jizreel Diabaté est un artiste peintre ivoirien autodidacte dont l'œuvre s'inscrit dans une quête spirituelle profonde. Spécialisé dans l'art contemporain africain et guidé par des visions bibliques, il a fait de son talent une véritable <i>prophétie par l'image</i>.
+        </p>
+        <p class="about-body">
+          Son travail vise avant tout la guérison spirituelle et l'apaisement. Primé à plusieurs reprises — <em>Prix de l'Innovation Artistique Spirituelle (2024)</em> et <em>Mention Spéciale du Jury (2023)</em> —, chaque toile qu'il réalise agit comme un dialogue intime entre la chair et l'invisible, partageant des messages divins à travers l'esthétique africaine.
+        </p>
+      </div>
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <img src="moi jizreel /1774958149917-w0ljxfiqga.jpg" alt="Jizreel Diabaté - Artiste">
+          <div class="about-img-deco"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <span class="section-label">Contact</span>
+      <h2 class="contact-title">Entrez dans la <em>Lumière</em></h2>
+      <a href="https://wa.me/2250758000990" target="_blank" class="contact-email" id="emailLink" style="font-size: clamp(1.5rem, 4vw, 2.5rem); display:block; margin-bottom: 0.5rem; text-decoration:none;">📱 +225 07 58 00 09 90</a>
+      <a href="mailto:contact@jizreeldiabate.com" class="contact-email" id="emailLink" style="font-size: 1.2rem; display:block; opacity: 0.8">contact@jizreeldiabate.com</a>
+      <div class="contact-order-block">
+        <p class="contact-order-text">Vous souhaitez commander une impression ?</p>
+        <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" class="contact-order-btn" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">Formulaire de commande</a>
+      </div>
+      <div class="contact-socials">
+        <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+        <span class="social-sep">·</span>
+        <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Jizreel Diabaté — Tous droits réservés</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Précédent">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Suivant">›</button>
+    <div class="lightbox-split">
+      <div class="lightbox-img-pane">
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      </div>
+      <div class="lightbox-info-pane">
+        <h3 class="lightbox-title">L'Inspiration</h3>
+        <p class="lightbox-story">Cette œuvre est bien plus qu'une simple peinture : c'est un voyage de l'âme. Inspirée par des moments de profonde prière et méditation, chaque nuance de couleur cherche à révéler la beauté de la foi et de l'indicible.</p>
+        
+        <div class="lightbox-artist">
+          <img src="moi jizreel /1774958149917-w0ljxfiqga.jpg" alt="Jizreel Diabaté">
+          <div>
+            <strong>Jizreel Diabaté</strong><br>
+            <span>Artiste Peintre</span>
+          </div>
+        </div>
+
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+        <a href="https://forms.gle/x4i6FCyw5F6kn81f6" target="_blank" class="lightbox-order-btn" id="lightboxOrderBtn" style="text-decoration:none">
+          🛒 Commander en impression
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PAYMENT MODAL ===== -->
+  <div class="pay-modal" id="payModal" aria-hidden="true" role="dialog">
+    <div class="pay-modal-backdrop" id="payModalBackdrop"></div>
+    <div class="pay-modal-box">
+
+      <!-- Header -->
+      <div class="pay-modal-header">
+        <div class="pay-modal-logo">JD</div>
+        <button class="pay-modal-close" id="payModalClose" aria-label="Fermer">✕</button>
+      </div>
+
+      <!-- Step indicators -->
+      <div class="pay-steps" id="paySteps">
+        <div class="pay-step active" data-step="1"><span>1</span> Format</div>
+        <div class="pay-step" data-step="2"><span>2</span> Coordonnées</div>
+        <div class="pay-step" data-step="3"><span>3</span> Paiement</div>
+        <div class="pay-step" data-step="4"><span>4</span> Confirmation</div>
+      </div>
+
+      <!-- STEP 1 — Format choice -->
+      <div class="pay-panel" id="step1">
+        <h2 class="pay-title">Choisir votre format</h2>
+        <p class="pay-sub">Sélectionnez le format de votre reproduction d'art</p>
+        <div class="pay-formats">
+          <button class="pay-format-card" data-format="A5" data-price="2500">
+            <div class="pay-format-icon">🖼️</div>
+            <div class="pay-format-info">
+              <strong>Format A5</strong>
+              <span>14,8 × 21 cm</span>
+              <em>2 500 FCFA</em>
+            </div>
+          </button>
+          <button class="pay-format-card pay-format-card--popular" data-format="A4" data-price="4000">
+            <div class="pay-format-badge">⭐ Populaire</div>
+            <div class="pay-format-icon">🖼️</div>
+            <div class="pay-format-info">
+              <strong>Format A4</strong>
+              <span>21 × 29,7 cm</span>
+              <em>4 000 FCFA</em>
+            </div>
+          </button>
+          <button class="pay-format-card" data-format="A3" data-price="6500">
+            <div class="pay-format-icon">🖼️</div>
+            <div class="pay-format-info">
+              <strong>Format A3</strong>
+              <span>29,7 × 42 cm</span>
+              <em>6 500 FCFA</em>
+            </div>
+          </button>
+        </div>
+        <div class="pay-qty">
+          <label class="pay-label" for="qtyInput">Quantité</label>
+          <div class="pay-qty-ctrl">
+            <button class="qty-btn" id="qtyMinus">−</button>
+            <input type="number" id="qtyInput" class="qty-input" value="1" min="1" max="10" readonly>
+            <button class="qty-btn" id="qtyPlus">+</button>
+          </div>
+        </div>
+        <div class="pay-summary" id="step1Summary"></div>
+        <button class="pay-next" id="step1Next" disabled>Continuer →</button>
+      </div>
+
+      <!-- STEP 2 — Coordonnées -->
+      <div class="pay-panel" id="step2" hidden>
+        <h2 class="pay-title">Vos coordonnées</h2>
+        <p class="pay-sub">Pour confirmer votre commande et vous recontacter</p>
+        <div class="pay-form">
+          <div class="pay-field">
+            <label class="pay-label" for="customerName">Nom complet *</label>
+            <input type="text" id="customerName" class="pay-input" placeholder="Jean Dupont" required>
+          </div>
+          <div class="pay-field">
+            <label class="pay-label" for="customerPhone">Numéro de téléphone *</label>
+            <div class="pay-phone-wrap">
+              <select class="pay-country" id="countryCode">
+                <option value="+225">🇨🇮 +225</option>
+                <option value="+221">🇸🇳 +221</option>
+                <option value="+223">🇲🇱 +223</option>
+                <option value="+226">🇧🇫 +226</option>
+                <option value="+228">🇹🇬 +228</option>
+                <option value="+229">🇧🇯 +229</option>
+                <option value="+33">🇫🇷 +33</option>
+              </select>
+              <input type="tel" id="customerPhone" class="pay-input pay-input--phone" placeholder="07 00 00 00 00" required>
+            </div>
+          </div>
+          <div class="pay-field">
+            <label class="pay-label" for="deliveryCity">Ville de livraison *</label>
+            <input type="text" id="deliveryCity" class="pay-input" placeholder="Abidjan, Dakar…" required>
+          </div>
+        </div>
+        <div class="pay-nav">
+          <button class="pay-back" id="step2Back">← Retour</button>
+          <button class="pay-next" id="step2Next">Continuer →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3 — Payment method -->
+      <div class="pay-panel" id="step3" hidden>
+        <h2 class="pay-title">Mode de paiement</h2>
+        <p class="pay-sub">Choisissez votre moyen de paiement mobile</p>
+        <div class="pay-methods">
+          <button class="pay-method" id="payWave" data-method="wave">
+            <div class="pay-method-logo pay-method-logo--wave">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="20" fill="#1ABCFE"/>
+                <path d="M12 24l4-8 4 6 4-10 4 8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="pay-method-info">
+              <strong>Wave</strong>
+              <span>Paiement instantané par Wave</span>
+            </div>
+            <div class="pay-method-check" aria-hidden="true">✓</div>
+          </button>
+          <button class="pay-method" id="payOrange" data-method="orange">
+            <div class="pay-method-logo pay-method-logo--orange">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="20" fill="#FF6600"/>
+                <rect x="13" y="13" width="14" height="14" rx="3" fill="white"/>
+                <path d="M17 20a3 3 0 1 0 6 0 3 3 0 0 0-6 0z" fill="#FF6600"/>
+              </svg>
+            </div>
+            <div class="pay-method-info">
+              <strong>Orange Money</strong>
+              <span>Paiement via Orange Money</span>
+            </div>
+            <div class="pay-method-check" aria-hidden="true">✓</div>
+          </button>
+        </div>
+        <div class="pay-order-recap" id="orderRecap"></div>
+        <div class="pay-nav">
+          <button class="pay-back" id="step3Back">← Retour</button>
+          <button class="pay-next" id="step3Next" disabled>Payer maintenant →</button>
+        </div>
+      </div>
+
+      <!-- STEP 4 — Payment instructions -->
+      <div class="pay-panel" id="step4" hidden>
+        <div class="pay-success-icon" id="paySuccessIcon">📲</div>
+        <h2 class="pay-title" id="step4Title">Instructions de paiement</h2>
+        <p class="pay-sub" id="step4Sub">Suivez ces étapes pour finaliser votre commande</p>
+
+        <!-- Wave instructions -->
+        <div class="pay-instructions" id="waveInstructions" hidden>
+          <div class="pay-instruction-card pay-instruction-card--wave">
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">1</span>
+              <p>Ouvrez l'application <strong>Wave</strong> sur votre téléphone</p>
+            </div>
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">2</span>
+              <p>Appuyez sur <strong>«&nbsp;Envoyer de l'argent&nbsp;»</strong></p>
+            </div>
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">3</span>
+              <p>Entrez ce numéro :</p>
+              <div class="pay-number-box" id="waveNumber">
+                <span id="wavePhoneDisplay">+225 07 00 00 00 00</span>
+                <button class="pay-copy-btn" data-copy="wavePhoneDisplay" title="Copier">📋</button>
+              </div>
+            </div>
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">4</span>
+              <p>Montant à envoyer :</p>
+              <div class="pay-amount-box" id="waveAmount">
+                <span class="pay-amount-value" id="waveAmountDisplay">0 FCFA</span>
+              </div>
+            </div>
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">5</span>
+              <p>Dans la description, inscrivez votre référence :</p>
+              <div class="pay-number-box">
+                <span id="waveRefDisplay"></span>
+                <button class="pay-copy-btn" data-copy="waveRefDisplay" title="Copier">📋</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orange Money instructions -->
+        <div class="pay-instructions" id="orangeInstructions" hidden>
+          <div class="pay-instruction-card pay-instruction-card--orange">
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">1</span>
+              <p>Composez le code USSD ou ouvrez l'app <strong>Orange Money</strong></p>
+              <div class="pay-ussd-box">*144#</div>
+            </div>
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">2</span>
+              <p>Choisissez <strong>«&nbsp;Transfert d'argent&nbsp;»</strong></p>
+            </div>
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">3</span>
+              <p>Entrez ce numéro :</p>
+              <div class="pay-number-box">
+                <span id="orangePhoneDisplay">+225 07 00 00 00 00</span>
+                <button class="pay-copy-btn" data-copy="orangePhoneDisplay" title="Copier">📋</button>
+              </div>
+            </div>
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">4</span>
+              <p>Montant à envoyer :</p>
+              <div class="pay-amount-box">
+                <span class="pay-amount-value" id="orangeAmountDisplay">0 FCFA</span>
+              </div>
+            </div>
+            <div class="pay-instr-step">
+              <span class="pay-instr-num">5</span>
+              <p>Référence commande :</p>
+              <div class="pay-number-box">
+                <span id="orangeRefDisplay"></span>
+                <button class="pay-copy-btn" data-copy="orangeRefDisplay" title="Copier">📋</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="pay-whatsapp-btn" id="whatsappBtn" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.865L.057 23.57a.5.5 0 0 0 .611.611l5.653-1.48A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.99 0-3.866-.542-5.476-1.486l-.391-.234-4.076 1.068 1.077-4.002-.256-.409A9.945 9.945 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Confirmer ma commande sur WhatsApp
+        </a>
+        <p class="pay-confirm-note">Après paiement, envoyez une copie de votre reçu sur WhatsApp pour valider votre commande.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
