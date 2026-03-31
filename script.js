@@ -123,6 +123,35 @@ window.addEventListener('scroll', () => {
   progressBar.style.width = (scrollY / docH * 100) + '%';
 });
 
+// ---- Floating WhatsApp Widget ----
+// (Already handled by HTML/CSS, no extra JS needed unless we want a welcome msg)
+
+// ---- Mobile Navigation Toggle ----
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (navToggle) {
+  navToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    nav.classList.toggle('active');
+  });
+}
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (nav.classList.contains('active') && !nav.contains(e.target)) {
+    nav.classList.remove('active');
+  }
+});
+
+// Close menu when a link is clicked
+const mobileLinks = document.querySelectorAll('.nav-link');
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+  });
+});
+
 // ---- Floating images setup ----
 function setupFloatingImages() {
   const floats = document.querySelectorAll('.float-img');
